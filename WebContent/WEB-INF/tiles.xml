@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+	<definition name="baseLayout" template="/WEB-INF/pages/template/layout.jsp">
+		<put-attribute name="title" value="Social4Insights" />
+		<put-attribute name="header" value="/WEB-INF/pages/template/header.jsp" />
+		<put-attribute name="navigation"
+			value="/WEB-INF/pages/template/navigation.jsp" />
+		<put-attribute name="content" value="" />
+		<put-attribute name="footer" value="/WEB-INF/pages/template/footer.jsp" />
+		<put-attribute name="include"
+			value="/WEB-INF/pages/template/include.jsp" />
+	</definition>
+
+	<definition name="login-form" extends="baseLayout">
+		<put-attribute name="content" value="/WEB-INF/pages/login-form.jsp" />
+	</definition>
+
+	<definition name="success-login" extends="baseLayout">
+		<put-attribute name="content" value="/WEB-INF/pages/success-login.jsp" />
+	</definition>
+
+	<definition name="home" extends="baseLayout">
+		<put-attribute name="content" value="/WEB-INF/pages/home.jsp" />
+	</definition>
+
+	<definition name="my-library" extends="baseLayout">
+		<put-attribute name="content" value="/WEB-INF/pages/my-library.jsp" />
+	</definition>
+
+	<definition name="my-profile" extends="baseLayout">
+		<put-attribute name="content" value="/WEB-INF/pages/my-profile.jsp" />
+	</definition>
+
+	<definition name="innovation" extends="baseLayout">
+		<put-attribute name="content" value="/WEB-INF/pages/innovation.jsp" />
+	</definition>
+
+	<definition name="ask-query" extends="baseLayout">
+		<put-attribute name="content" value="/WEB-INF/pages/ask-query.jsp" />
+	</definition>
+
+	<definition name="admin-first" extends="baseLayout">
+		<put-attribute name="content" value="/WEB-INF/pages/admin-first.jsp" />
+	</definition>
+
+	<definition name="admin-second" extends="baseLayout">
+		<put-attribute name="content" value="/WEB-INF/pages/admin-second.jsp" />
+	</definition>
+
+</tiles-definitions>
